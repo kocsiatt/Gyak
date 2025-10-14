@@ -1,0 +1,1 @@
+Készen van az első kis GitHub!
