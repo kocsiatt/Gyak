@@ -1,6 +1,6 @@
 def name(name):
 
-    if not name:
+    if not name.strip():
         return "Nem adtál meg nevet"
     else:
         return "Szia, " + name
