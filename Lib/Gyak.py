@@ -1,14 +1,11 @@
-def name(name):
+def greet(raw_name: str) -> str:
+    cleaned = raw_name.strip()
+    if not cleaned:
+        return "Nem adtál meg nevet!"
+    return f"Szia, {cleaned}!"
 
-    if not name.strip():
-        return "Nem adtál meg nevet"
-    else:
-        return "Szia, " + name
-
-
-
-
-print(name(input("Kérlek add meg a neved!: ")))
+if __name__ == "__main__":
+    print(greet(input("Kérlek add meg a neved!: ")))
 
 
 
