@@ -20,3 +20,5 @@ def check_password_strength(password: str) -> str:
         return "Gyenge jelszó: nincs benne szám."
     return "Erős jelszó."
 
+if __name__ == "__main__":
+    print(check_password_strength(input("Kérlek add meg a jelszót!: ")))

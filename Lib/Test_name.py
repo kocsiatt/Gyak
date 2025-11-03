@@ -1,8 +1,9 @@
 import pytest
-from Gyak import greet
+"""from Gyak import greet"""
+from Gyak import check_password_strength
 
 
-@pytest.mark.parametrize(
+"""@pytest.mark.parametrize(
     "inp, expected",
     [("", "Nem adtál meg nevet!"),
         ("Attila", "Szia, Attila!"),
@@ -13,7 +14,7 @@ from Gyak import greet
 
 
 def test_greet_variants(inp, expected):
-    assert greet(inp) == expected
+    assert greet(inp) == expected"""
 
 
 @pytest.mark.parametrize(
