@@ -14,3 +14,15 @@ from Gyak import greet
 
 def test_greet_variants(inp, expected):
     assert greet(inp) == expected
+
+
+@pytest.mark.parametrize(
+    "imp, expected",
+    [("abc", "Gyenge jelszó: túl rövid."),
+        ("ABCDEFGHIJKL", "Gyenge jelszó: nincs benne kisbetű."),
+        ("abcdefghijkl", "Gyenge jelszó: nincs nagybetű."),
+        ("Abcdefghijkl", "Gyenge jelszó: nincs benne szám.")]
+)
+
+def check_password_strength(inp, expected):
+    assert check_password_strength(inp) == expected
