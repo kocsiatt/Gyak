@@ -23,3 +23,4 @@ def check_password_strength(password: str) -> str:
 if __name__ == "__main__":
     print(check_password_strength(input("Kérlek add meg a jelszót!: ")))
 
+
